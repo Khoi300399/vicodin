@@ -1,0 +1,99 @@
+.camppaign {
+  background-image: url("/assets/image/bg-campaign.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-block: 120px;
+  margin-bottom: 120px;
+  &__intro {
+    font-family: $secondary-font;
+    @include text(1.4rem, 600, $primary-color);
+    margin-bottom: 15px;
+  }
+  &__title {
+    font-family: $secondary-font;
+    @include text(2.4rem, 700);
+    margin-bottom: 15px;
+  }
+  &__decs {
+    @include text(1.4rem, 600, $third-color);
+    margin-bottom: 20px;
+  }
+  &__countdown {
+    @include text(1.4rem, 600, $third-color);
+    ul {
+      padding: 0;
+      @include flexBox(center);
+      gap: 30px;
+    }
+
+    text-align: center;
+    span {
+      @include flexBox(center, center);
+      background: #fff;
+      @include size(50px);
+      margin-bottom: 5px;
+      @include text(2rem, 700, $primary-color);
+    }
+    small {
+      font-size: 1.4rem;
+    }
+  }
+  &__btn {
+    margin-top: 30px;
+    .link {
+      margin-left: 15px;
+      @include text(1.4rem, 600, $primary-color);
+    }
+  }
+}
+
+@include minWidth(767.98px) {
+  .camppaign {
+    &__intro {
+      font-size: 1.5rem;
+    }
+    &__title {
+      font-size: 2.6rem;
+    }
+    &__decs {
+      margin-bottom: 50px;
+    }
+  }
+}
+@include minWidth(991.98px) {
+  .camppaign {
+    &__intro {
+      font-size: 1.6rem;
+    }
+    &__title {
+      font-size: 3rem;
+    }
+    &__decs {
+      font-size: 1.6rem;
+      margin-bottom: 50px;
+    }
+    &__countdown {
+      span {
+        @include size(60px, 50px);
+
+        font-size: 2.4rem;
+      }
+      small {
+        font-size: 1.8rem;
+      }
+    }
+    &__btn {
+      .link {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+@include minWidth(1199.98px) {
+  .camppaign {
+    &__title {
+      font-size: 4.4rem;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.intro {
+  padding-block: 115px;
+  padding-inline: 15px;
+  background: #f2f6f7;
+  &__intro {
+    font-family: $secondary-font;
+    @include text(1.4rem, 600, $primary-color);
+    margin-bottom: 15px;
+  }
+  &__title {
+    font-family: $secondary-font;
+    @include text(2.4rem, 700);
+    margin-bottom: 35px;
+  }
+  &__decs {
+    max-width: 600px;
+    @include text(1.4rem, 600, $third-color);
+    margin-bottom: 20px;
+  }
+  &__menu {
+    margin-top: 20px;
+  }
+  &__item {
+    @include flexBox(center);
+    margin-top: 16px;
+    gap: 15px;
+    span {
+      @include size(45px);
+      @include flexBox(center, center);
+      border-radius: 100%;
+      background: $primary-color;
+      color: #fff;
+    }
+    p {
+      color: $third-color;
+    }
+  }
+  &__img {
+    display: none;
+  }
+}
+@include minWidth(767.98px) {
+  .intro {
+    &__intro {
+      font-size: 1.5rem;
+    }
+    &__title {
+      font-size: 2.6rem;
+    }
+    &__decs {
+      margin-bottom: 50px;
+    }
+  }
+}
+@include minWidth(991.98px) {
+  .intro {
+    &__intro {
+      font-size: 1.6rem;
+    }
+    &__title {
+      font-size: 3rem;
+    }
+    &__decs {
+      font-size: 1.6rem;
+      margin-bottom: 50px;
+    }
+    &__img {
+      display: block;
+    }
+  }
+}
+@include minWidth(1199.98px) {
+  .intro {
+    &__title {
+      font-size: 4.4rem;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.sale-item {
+  margin-bottom: 30px;
+  padding-inline: 15px;
+  .sale-img {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  img {
+    width: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    transition: all linear 1s;
+  }
+  &:hover img {
+    transform: scale(1.1);
+  }
+}

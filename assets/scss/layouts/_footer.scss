@@ -1,0 +1,104 @@
+.footer {
+  padding: 92px 0 0;
+  background: #f2f6f7;
+  ul {
+    padding: 0;
+  }
+  &__info {
+    padding-inline: 15px;
+    margin-bottom: 60px;
+  }
+
+  &__decs {
+    @include text(1.4rem, 600, $third-color);
+    margin-bottom: 21px;
+  }
+  &__address {
+    li {
+      @include flexBox(center);
+      @include text(1.4rem, 600, $third-color);
+      gap: 10px;
+    }
+  }
+  &__social {
+    margin-top: 20px;
+    ul {
+      @include flexBox(center);
+      @include text(1.4rem, 600, $third-color);
+      gap: 20px;
+    }
+  }
+  &__item {
+    @include text(1.4rem, 600, $third-color);
+    padding-inline: 15px;
+  }
+  &__title {
+    font-family: $secondary-font;
+    @include text(2.2rem, 700);
+    margin-bottom: 25px;
+  }
+  form {
+    @include flexBox(center, center);
+  }
+  &__input {
+    background: #fff;
+    padding: 1px 50px 1px 20px;
+    height: 65px;
+    border: 1px solid $border-color;
+    outline: none;
+  }
+
+  &__btn {
+    padding: 0 18px;
+    height: 65px;
+    color: #fff;
+    background: $primary-color;
+    transition: all 0.3s;
+    &:hover {
+      background: $secondary-color;
+    }
+  }
+  .footer__contact {
+    margin-bottom: 60px;
+    padding-inline: 15px;
+    h5 {
+      font-family: $secondary-font;
+      @include text(1.6rem, 700);
+      margin: 30px 0 25px;
+    }
+  }
+
+  &__bottom {
+    padding: 25px 15px;
+    @include text(1.4rem, 600, #fff);
+    background: #282b38;
+    .copyright {
+      margin-bottom: 20px;
+      p {
+        text-align: center;
+      }
+    }
+    ul {
+      @include flexBox(center, space-evenly);
+    }
+  }
+}
+
+@include minWidth(1199.98px) {
+  .footer {
+    &__input {
+      padding-right: 0;
+    }
+    &__bottom {
+      .copyright {
+        p {
+          text-align: left;
+        }
+      }
+      ul {
+        @include flexBox(center, flex-end);
+        gap: 20px;
+      }
+    }
+  }
+}

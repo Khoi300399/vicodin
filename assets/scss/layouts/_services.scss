@@ -1,0 +1,24 @@
+.services {
+  background: #f2f6f7;
+  padding-block: 30px;
+  &__item {
+    padding: 40px 30px 15px;
+    @include flexBox(center);
+    gap: 15px;
+    width: fit-content;
+  }
+  &__img {
+    @include size(50px);
+  }
+  &__info {
+    h4 {
+      font-family: $secondary-font;
+      @include text(1.7rem, 700);
+    }
+    p {
+      @include text(1.5rem, 600, $third-color);
+      margin: 0;
+      width: max-content;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+section.blog
+    div.container
+        +title("Leatest Blogs")
+        div.swiper
+            div.swiper-wrapper
+                div.swiper-slide
+                    +blogItem({
+                        image:"./assets/image/blog1.jpg",
+                        tag:"Decorate",
+                        title:"10 Brilliant Ways To Decorate Your Home"
+                    })
+                div.swiper-slide
+                    +blogItem({
+                        image:"./assets/image/blog2.jpg",
+                        tag:"Interior",
+                        title:"The Most Inspiring Interior Design Of 2021"
+                    })
+                div.swiper-slide
+                    +blogItem({
+                        image:"./assets/image/blog3.jpg",
+                        tag:"Estate",
+                        title:"Recent Commercial Real Estate Transactions"
+                    })
+                div.swiper-slide
+                    +blogItem({
+                        image:"./assets/image/blog4.jpg",
+                        tag:"Room",
+                        title:"Renovating a Living Room? Experts Share Their Secrets"
+                    })
+                div.swiper-slide
+                    +blogItem({
+                        image:"./assets/image/blog5.jpg",
+                        tag:"Trends",
+                        title:"7 home trends that will shape your house in 2021"
+                    })
+            div.swiper-button-next
+                span
+                    <i class="fa-solid fa-arrow-right"></i>
+            div.swiper-button-prev
+                span
+                    <i class="fa-solid fa-arrow-left"></i>
+            div.swiper-pagination
+                span.swiper-pagination-bullet
+                span.swiper-pagination-bullet
+                span.swiper-pagination-bullet

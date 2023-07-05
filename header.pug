@@ -1,0 +1,160 @@
+header.header 
+        div.header-top
+            div.container
+                div.row
+                    div.col-sm-12.col-md-7
+                        ul.contact-list
+                            li.contact-item 
+                                +textIcon({
+                                    icon:"fa-regular fa-envelope",
+                                    text:"thanhkhoi@gmail.com"
+                                })
+                            li.contact-item
+                                +textIcon({
+                                    icon:"fa-solid fa-location-dot",
+                                    text:" 15/A, Nest Tower, NYC"
+                                })
+                    div.col-sm-12.col-md-5
+                        ul.icon-list
+                            li.icon-item
+                                i(class="fa-brands fa-facebook-f")
+                            li.icon-item
+                                i(class="fa-brands fa-twitter") 
+                            li.icon-item
+                                i(class="fa-brands fa-instagram") 
+                            li.icon-item
+                                i(class="fa-brands fa-dribbble") 
+        div.header-middle
+            div.container.h-100
+                div.row.justify-content-between.align-items-center.py-md-3.py-lg-0.px-lg-3.bg-white.h-100
+                    div.col-sm-12.col-md-7.col-xl-4
+                        div.logo
+                            img(src="./assets/image/logo.png", alt="logo")
+                    div.col-md-1.col-xl-6
+                        nav.navbar
+                            ul.navbar-menu
+                                li.navbar-item
+                                    span.navbar-text Home 
+                                    span.navbar-icon 
+                                        i(class="fa-solid fa-plus") 
+                                li.navbar-item
+                                    span.navbar-text About 
+                                    span.navbar-icon  
+                                        i(class="fa-solid fa-plus") 
+                                li.navbar-item
+                                    span.navbar-text Shop
+                                    span.navbar-icon 
+                                        i(class="fa-solid fa-plus") 
+                                li.navbar-item
+                                    span.navbar-text News
+                                    span.navbar-icon 
+                                        i(class="fa-solid fa-plus") 
+                                li.navbar-item
+                                    span.navbar-text Pages
+                                    span.navbar-icon 
+                                        i(class="fa-solid fa-plus") 
+                                li.navbar-item
+                                    span.navbar-text Contact 
+                    div.col-sm-12.col-md-4.col-xl-2
+                        ul.btn-list 
+                            li.btn-item
+                                i(class="fa-solid fa-magnifying-glass")
+                            li.btn-item
+                                i(class="fa-regular fa-user") 
+                            li.btn-item
+                                i(class="fa-solid fa-cart-shopping")
+                                sup 2
+                            li.btn-item
+                                label(for="toggle-sidebar",class="fa-solid fa-bars") 
+                input(type="checkbox" id="toggle-sidebar" hidden)
+                label(for="toggle-sidebar").header__overlay 
+                div.sidebar 
+                    div.sidebar-top
+                        div.sidebar-logo
+                            img(src="./assets/image/logo.png", alt="logo")
+                        label(for="toggle-sidebar").sidebar-close    
+                            i(class="fa-solid fa-xmark") 
+                    div.sidebar-search
+                        div.input-search
+                            input(type="text" placeholder = "Search ...")
+                        div.icon-search
+                            i(class="fa-solid fa-magnifying-glass") 
+                    div.sidebar-middle
+                        nav
+                            ul.sidebar-menu
+                                li.sidebar-item
+                                    span.sidebar-text Home 
+                                    span.sidebar-icon 
+                                        i(class="fa-solid fa-plus") 
+                                li.sidebar-item
+                                    span.sidebar-text About 
+                                    span.sidebar-icon  
+                                        i(class="fa-solid fa-plus") 
+                                li.sidebar-item
+                                    span.sidebar-text Shop
+                                    span.sidebar-icon 
+                                        i(class="fa-solid fa-plus") 
+                                li.sidebar-item
+                                    span.sidebar-text News
+                                    span.sidebar-icon 
+                                        i(class="fa-solid fa-plus") 
+                                li.sidebar-item
+                                    span.sidebar-text Pages
+                                    span.sidebar-icon 
+                                        i(class="fa-solid fa-plus") 
+                                li.sidebar-item
+                                    span.sidebar-text Contact 
+                    div.sidebar-manage
+                        ul.manage-list
+                            li.manage-item 
+                                span.manage-icon
+                                    i(class="fa-regular fa-user") 
+                                span.manage-text My Account
+                            li.manage-item 
+                                span.manage-icon
+                                    i(class="fa-regular fa-heart")
+                                    sup 3 
+                                span.manage-text Wishlist 
+                            li.manage-item 
+                                span.manage-icon
+                                    i(class="fa-solid fa-cart-shopping")
+                                    sup 5
+                                span.manage-text Shopping Cart
+                    div.sidebar-bottom
+                        ul.info-list
+                            li.info-item
+                                i(class="fa-brands fa-facebook-f")
+                            li.info-item
+                                i(class="fa-brands fa-twitter") 
+                            li.info-item
+                                i(class="fa-brands fa-instagram") 
+                            li.info-item
+                                i(class="fa-brands fa-dribbble") 
+        div.header-slider(class="owl-carousel owl-theme")
+            div.header-item.item1
+                div.slide__content
+                        +textIcon({
+                            icon:"fa-solid fa-syringe",
+                            text:" 100% genuine Products"
+                        })
+                        h1.slide__title-main Get 20% Discount <br> Of N95 Mask
+                        p.slie__decs Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br> eiusmod tempor incididunt ut labore.
+                        a.btn Shop Now
+            div.header-item.item2
+                div.slide__content.text-center
+                        +textIcon({
+                            icon:"fa-solid fa-syringe",
+                            text:" 100% genuine Products"
+                        })
+                        h1.slide__title-main Get 20% Discount Of <br> N95 Mask
+                        p.slie__decs Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br> eiusmod tempor incididunt ut labore.
+                        a.btn Shop Now
+            div.header-item.item3
+                div.slide__content.text-end
+                        +textIcon({
+                            icon:"fa-solid fa-syringe",
+                            text:" 100% genuine Products"
+                        })
+                        h1.slide__title-main Get 20% Discount Of <br> N95 Mask
+                        p.slie__decs Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br> eiusmod tempor incididunt ut labore.
+                        a.btn Shop Now

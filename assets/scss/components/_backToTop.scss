@@ -1,0 +1,20 @@
+#back-to-top {
+  @include size(35px);
+  @include flexBox(center, center);
+  background-color: #fff;
+  color: $secondary-color;
+  border-radius: 5px;
+  transform: rotate(45deg);
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  transition: all 0.3s;
+  i {
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    background: $primary-color;
+    color: #fff;
+  }
+}

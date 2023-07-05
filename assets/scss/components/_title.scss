@@ -1,0 +1,28 @@
+.title {
+  font-family: $secondary-font;
+  @include text(2.4rem, 700);
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@include minWidth(767.98px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+@include minWidth(991.98px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+@include minWidth(1199.98px) {
+  .title {
+    font-size: 5.6rem;
+  }
+}
+@include minWidth(1399.98px) {
+  .title {
+    font-size: 6rem;
+  }
+}

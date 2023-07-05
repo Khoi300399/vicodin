@@ -1,0 +1,81 @@
+.blog {
+  margin-bottom: 50px;
+  &__item {
+    border-radius: 10px;
+    box-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
+    margin-bottom: 90px;
+  }
+  &__img {
+    img {
+      border-radius: 10px 10px 0 0;
+      @include size(100%);
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
+  &__content {
+    padding: 30px;
+  }
+  &__header {
+    @include flexBox(center);
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  &__body {
+    font-family: $secondary-font;
+    margin-bottom: 20px;
+    height: 40px;
+    max-height: 40px;
+    h3 {
+      font-size: 1.6rem;
+    }
+  }
+  &__bottom {
+    padding-top: 15px;
+    border-top: 1px solid$border-color;
+    @include flexBox(center, space-between);
+  }
+  &__readmore {
+    text-transform: uppercase;
+    @include text(1.2rem, 700, $primary-color);
+  }
+
+  .swiper-pagination {
+    bottom: 30px;
+    .swiper-pagination-bullet {
+      @include size(10px);
+      margin-inline: 5px;
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      @include size(15px);
+      background-color: $primary-color;
+    }
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+  .swiper:hover .swiper-button-next,
+  .swiper:hover .swiper-button-prev {
+    transform: translateY(-20px);
+    opacity: 1;
+    visibility: visible;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-size: 25px;
+    color: $secondary-color;
+    @include size(50px);
+    @include flexBox(center, center);
+    background: #fff;
+    border-radius: 100%;
+    border: 1px solid $border-color;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    &:hover {
+      color: #fff;
+      background: $primary-color;
+    }
+  }
+}

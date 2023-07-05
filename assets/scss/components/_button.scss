@@ -1,0 +1,35 @@
+.btn {
+  position: relative;
+  font-family: $secondary-font;
+  padding: 10px 20px;
+  background-color: $primary-color;
+  @include text(1.4rem, 600, #fff);
+  text-transform: uppercase;
+  z-index: 1;
+  transition: all 0.5s;
+  &:after {
+    content: "";
+    display: inline-block;
+    @include size(0%, 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: -1;
+    transition: all ease 0.5s;
+  }
+}
+.btn:hover {
+  color: #000;
+  border: 1px solid #000;
+}
+.btn:hover::after {
+  width: 100%;
+}
+
+@include minWidth(991.98px) {
+  .btn {
+    padding: 17px 35px;
+    font-size: 1.6rem;
+  }
+}

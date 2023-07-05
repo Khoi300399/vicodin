@@ -1,0 +1,73 @@
+mixin textIcon(data)
+    a.text-icon(href="#!")
+        i.icon(class= data.icon)
+        span.text= data.text
+
+mixin salesItem(image)
+    div.sale-item
+        div.sale-img
+            img(src= image, alt="")
+
+mixin featureItem(data)
+    div.feature-item
+        div.feature-action
+            ul
+                li
+                    i(class="far fa-eye") 
+                li
+                    i(class="fas fa-shopping-cart") 
+                li
+                    i(class="far fa-heart") 
+        div.feature-img
+            img(src= data.image, alt= data.name)
+        div.feature-info
+            div.feature-rating(class= data.rating)
+                ul
+                    li
+                        i(class="fas fa-star") 
+                    li
+                        i(class="fas fa-star") 
+                    li
+                        i(class="fas fa-star") 
+                    li
+                        i(class="fas fa-star") 
+                    li
+                        i(class="fas fa-star") 
+            h3.feature-name= data.name
+            div
+                span.feature-price(class= data.colorPrice)= data.price
+                del.feature-sale(class= data.colorSale)= data.sale
+
+mixin title(title)
+    h2.title= title
+
+mixin servicesItem(data)
+    div.services__item
+        div.services__img
+            img(src= data.image, alt="...")
+        div.services__info
+            h4= data.title  
+            p= data.decs
+
+mixin blogItem(data)
+    div.blog__item
+        div.blog__img
+            img(src= data.image, alt="...")
+        div.blog__content
+            div.blog__header
+                +textIcon({
+                    icon:"far fa-user",
+                    text:"by:Admin",
+                })
+                +textIcon({
+                    icon:"fas fa-tags",
+                    text: data.tag,
+                })
+            div.blog__body
+                h3= data.title
+            div.blog__bottom
+                +textIcon({
+                    icon:"far fa-calendar-alt",
+                    text: "July 23, 2021",
+                })
+                a.blog__readmore READ MORE
