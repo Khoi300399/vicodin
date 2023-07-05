@@ -59,7 +59,7 @@
     padding-block: 10px;
     height: 90px;
     max-height: 90px;
-    box-shadow: 0 10px 50px 0 rgba(46, 56, 220, 0.2);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
     transition: all 0.5s;
     animation: UpToDown 0.5s linear;
     .logo {
@@ -306,8 +306,7 @@
       justify-content: flex-start;
     }
     &-middle {
-      padding-block: 22px;
-      height: 114px;
+      padding-block: 25px;
       background: transparent;
       .logo {
         margin: 0;
