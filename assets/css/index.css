@@ -742,6 +742,9 @@ body {
   .header .btn-list .btn-item:nth-child(4) {
     display: none;
   }
+  .header .sidebar, .header__overlay {
+    display: none;
+  }
   .header .owl-nav {
     width: 100%;
     position: absolute;

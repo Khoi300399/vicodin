@@ -400,7 +400,10 @@
         display: none;
       }
     }
-
+    .sidebar,
+    &__overlay {
+      display: none;
+    }
     .owl-nav {
       width: 100%;
       position: absolute;
